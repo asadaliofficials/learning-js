@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Way to Create Cards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    body {
+      background-color: #e7e7e7;
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+      flex-direction: column;
+    }
+    .header {
+      width: 70vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      /* border: 1px solid #000; */
+      border-radius: 15px;
+      box-shadow: 2px 3px 5px black
+    }
+    .header h1{
+      color: #f75b01;
+      font-weight: 800;
+    }
+    .header button {
+      padding: 15px 10px;
+      border: none;
+      border-radius: 15px;
+      background-color: #f75b01;
+      box-shadow: 2px 3px 5px black;
+      cursor: pointer;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .cards {
+  height: 80vh; /* Fixed height */
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 2px 3px 5px black;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 16px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+    .card {
+      background-color: white;
+      width: 96%;
+      height: 120px;
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+    .thumbnail {
+      width: 200px;
+      height: 100%;
+      background-color: #fff;
+      border-radius: 15px;
+      background-image: url("https://www.filepicker.io/api/file/eYA6E8L3TiGl0GxpQoS6");
+      background-size: contain;
+      background-position: right;
+      position: relative;
+      overflow: hidden;
+    }
+    .duration {
+      background-color: rgba(0, 0, 0, .7);
+      color: #fff;
+      border-radius: 5px;
+      padding: 5px;
+      width: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      position: absolute;
+      bottom: 2px;
+      right: 5px;
+    }
+    .title {
+      width: calc(100% - 168px);
+      height: 100%;
+      background-color: #fff;
+      border-radius: 15px;
+    }
+    .title h2 {
+      margin: 5px 5px 5px 5px;
+    }
+    .details {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 11px;
+      margin-top: 14px;
+      gap: 3px;
+    }
+    .details p{
+      display: flex;
+      font-weight: normal;
+      /* color: red; */
+    }
+    .animation{
+      position: relative;
+      top: -188px;
+      animation: animation .5s ease-in-out forwards;
+    }
+    @keyframes animation {
+      from{
+        top: -188px
+      }
+      to{
+        top: 0px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Card Generator...</h1>
+    <h2 class="totalCards">Total Cards: 0</h2>
+    <button id="generate">Generate New Card</button>
+  </div>
+  <div class="cards">
+   <p class="message">You don't have any Card yet.</p>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
