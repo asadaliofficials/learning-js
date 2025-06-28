@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container, .childContainer, .child{  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      width: 300px;
+      height: 300px;
+      background-color: red;
+    }
+    .childContainer{
+      width: 200px;
+      height: 200px;
+      background-color: green;
+    }
+    .child{
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="childContainer">
+      <div class="child">
+        Hey i am a child.
+      </div>
+    </div>
+  </div>
+</body>
+<script src="event bubbling.js"></script>
+</html>
