@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+
+       function get(element){
+        let a;
+        a = element.innerText;
+        let b;
+        b = get2(a);
+        element.innerText = b;
+       }
+
+        function get2(a){
+            let x;
+            x = a * 2;
+            return x;
+
+
+        }
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+
+    <button id="btn" onclick="get(this)">2</button>
+    
+</body>
+</html>
