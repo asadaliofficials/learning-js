@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+        // Simple functions
+
+        /*
+        var n;
+       function get(){
+        n = prompt("enter a random value:")
+        alert("value entered " + n);
+       }
+
+        function hello(){
+            console.log("Working... " + n );
+            n++;
+        }
+
+       */
+
+
+       // Functions with parameter
+     /*
+       var n,m;
+       function get(){
+        n = prompt("Enter a first value:");
+        m = prompt("Enter a Enter a second value:");
+        alert("Value entered...!");
+       };
+
+
+       function hello(){
+        hello2(n,m);
+       }
+
+       function hello2(n, m){
+        let x;
+        x = n + m;
+        console.log(x);	
+
+       };
+
+       */
+      
+       function first(){
+        let a;
+        a = prompt("Enter your first name:");
+        console.log("Your first name is" + a);
+       };
+       function last(){
+        let a;
+        a = prompt("Enter your last name:");
+        console.log("Your last name is" + a);
+       };
+       function age(){
+        let a;
+        a = prompt("Enter your age:");
+        console.log("Your age is" + a);
+       };
+
+       function first2(element){
+        console.log(element.innerText);
+       }
+
+
+
+    </script>
+
+
+</head>
+<body>
+    <input type="text" value="text" id="input">
+    <button onclick="first2(this)">First name</button>
+    <button onclick="last()">last name</button>
+    <button onclick="age()">age</button>
+</body>
+</html>
