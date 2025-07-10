@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="text">Hello World</h1>
+  <button id="btn">start</button>
+</body>
+<script>
+  let text = document.getElementById('text')
+  let btn = document.getElementById('btn')
+  btn.addEventListener('click', () => {
+  //   setTimeout(() => {
+  //     text.style.color = getRandomColor()
+      
+  //   }, 1500);
+  // })
+    let myInterval = setInterval(() => {
+      text.style.color = getRandomColor()
+    clearInterval(myInterval)
+      
+    }, 500);
+  })
+  
+  function getRandomColor() {
+    let letters = '0123456789ABCDEF'
+    let color = '#'
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)]
+    }
+    return color
+  }
+  function getRandomColor2() {
+    let val1 = math.floor(math.random() * 256)
+    let val2 = math.floor(math.random() * 256)
+    let val3 = math.floor(math.random() * 256)
+    return `rgb(${val1},${val2},${val3})`
+  }
+
+
+</script>
+</html>
