@@ -50,3 +50,9 @@ let wm = new WeakMap();
 let obj = {};
 wm.set(obj, "value");
 
+
+// Nullish Coalescing Example
+let a = null;
+let b = a ?? "default";
+console.log(b);
+
