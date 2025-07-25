@@ -109,3 +109,9 @@ let wm = new WeakMap();
 let obj = {};
 wm.set(obj, "value");
 
+
+// Destructuring Example
+const person = { name: "Ali", age: 25 };
+const { name, age } = person;
+console.log(name, age);
+
