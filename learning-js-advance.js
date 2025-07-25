@@ -89,3 +89,14 @@ const person = { name: "Ali", age: 25 };
 const { name, age } = person;
 console.log(name, age);
 
+
+// Class Example
+class Animal {
+  constructor(name) { this.name = name; }
+  speak() { console.log(this.name + " makes a noise."); }
+}
+class Dog extends Animal {
+  speak() { console.log(this.name + " barks."); }
+}
+new Dog("Rex").speak();
+
