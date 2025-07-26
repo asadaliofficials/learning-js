@@ -158,3 +158,12 @@ const nums = [1, 2, 3, 4];
 const sum = nums.reduce((acc, n) => acc + n, 0);
 console.log(sum);
 
+
+// Map vs WeakMap
+let map = new Map();
+map.set("a", 1);
+console.log(map.get("a"));
+let wm = new WeakMap();
+let obj = {};
+wm.set(obj, "value");
+
