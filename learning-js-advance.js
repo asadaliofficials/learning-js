@@ -123,3 +123,10 @@ export function add(a, b) { return a + b; }
 import { add } from "./math.js";
 console.log(add(2, 3));
 
+
+// Promises Example
+const myPromise = new Promise((resolve) => {
+  setTimeout(() => resolve("Done!"), 1000);
+});
+myPromise.then(msg => console.log(msg));
+
