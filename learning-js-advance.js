@@ -167,3 +167,10 @@ let wm = new WeakMap();
 let obj = {};
 wm.set(obj, "value");
 
+
+// Promises Example
+const myPromise = new Promise((resolve) => {
+  setTimeout(() => resolve("Done!"), 1000);
+});
+myPromise.then(msg => console.log(msg));
+
