@@ -174,3 +174,9 @@ const myPromise = new Promise((resolve) => {
 });
 myPromise.then(msg => console.log(msg));
 
+
+// Optional Chaining Example
+const user = { profile: { email: "test@gmail.com" } };
+console.log(user?.profile?.email);
+console.log(user?.account?.password);
+
