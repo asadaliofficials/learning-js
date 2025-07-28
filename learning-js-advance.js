@@ -193,3 +193,9 @@ const myPromise = new Promise((resolve) => {
 });
 myPromise.then(msg => console.log(msg));
 
+
+// Array Map Example
+const nums = [1, 2, 3];
+const doubled = nums.map(n => n * 2);
+console.log(doubled);
+
