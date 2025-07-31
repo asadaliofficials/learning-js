@@ -260,3 +260,9 @@ function throttle(fn, limit) {
 const log = throttle(() => console.log("Throttled!"), 1000);
 log(); log();
 
+
+// Array Reduce Example
+const nums = [1, 2, 3, 4];
+const sum = nums.reduce((acc, n) => acc + n, 0);
+console.log(sum);
+
