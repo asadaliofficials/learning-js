@@ -304,3 +304,9 @@ const arr = [1, 2, 3];
 const arr2 = [...arr, 4, 5];
 console.log(arr2);
 
+
+// Destructuring Example
+const person = { name: "Ali", age: 25 };
+const { name, age } = person;
+console.log(name, age);
+
