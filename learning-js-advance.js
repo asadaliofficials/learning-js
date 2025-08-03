@@ -310,3 +310,11 @@ const person = { name: "Ali", age: 25 };
 const { name, age } = person;
 console.log(name, age);
 
+
+// Modules Example
+// math.js
+export function add(a, b) { return a + b; }
+// index.js
+import { add } from "./math.js";
+console.log(add(2, 3));
+
