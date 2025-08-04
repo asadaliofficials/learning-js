@@ -137,3 +137,12 @@ const counter = outer();
 console.log(counter());
 console.log(counter());
 
+
+// Currying Example
+function add(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+console.log(add(5)(3));
+
