@@ -318,3 +318,15 @@ export function add(a, b) { return a + b; }
 import { add } from "./math.js";
 console.log(add(2, 3));
 
+
+// Debounce Function
+function debounce(fn, delay) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), delay);
+  };
+}
+const log = debounce(() => console.log("Debounced!"), 1000);
+log(); log();
+
