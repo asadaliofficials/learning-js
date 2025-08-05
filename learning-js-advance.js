@@ -354,3 +354,18 @@ function debounce(fn, delay) {
 const log = debounce(() => console.log("Debounced!"), 1000);
 log(); log();
 
+
+// Throttle Function
+function throttle(fn, limit) {
+  let inThrottle;
+  return (...args) => {
+    if (!inThrottle) {
+      fn(...args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+}
+const log = throttle(() => console.log("Throttled!"), 1000);
+log(); log();
+
