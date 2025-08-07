@@ -377,3 +377,9 @@ let ws = new WeakSet();
 let obj = {};
 ws.add(obj);
 
+
+// Array Map Example
+const nums = [1, 2, 3];
+const doubled = nums.map(n => n * 2);
+console.log(doubled);
+
