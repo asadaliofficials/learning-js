@@ -383,3 +383,10 @@ const nums = [1, 2, 3];
 const doubled = nums.map(n => n * 2);
 console.log(doubled);
 
+
+// Promises Example
+const myPromise = new Promise((resolve) => {
+  setTimeout(() => resolve("Done!"), 1000);
+});
+myPromise.then(msg => console.log(msg));
+
