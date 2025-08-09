@@ -419,3 +419,9 @@ let ws = new WeakSet();
 let obj = {};
 ws.add(obj);
 
+
+// Nullish Coalescing Example
+let a = null;
+let b = a ?? "default";
+console.log(b);
+
