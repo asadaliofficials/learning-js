@@ -459,3 +459,15 @@ const myPromise = new Promise((resolve) => {
 });
 myPromise.then(msg => console.log(msg));
 
+
+// Debounce Function
+function debounce(fn, delay) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), delay);
+  };
+}
+const log = debounce(() => console.log("Debounced!"), 1000);
+log(); log();
+
