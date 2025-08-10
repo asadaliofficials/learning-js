@@ -440,3 +440,15 @@ const arr = [1, 2, 3];
 const arr2 = [...arr, 4, 5];
 console.log(arr2);
 
+
+// Debounce Function
+function debounce(fn, delay) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), delay);
+  };
+}
+const log = debounce(() => console.log("Debounced!"), 1000);
+log(); log();
+
