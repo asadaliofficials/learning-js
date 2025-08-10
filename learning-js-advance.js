@@ -452,3 +452,10 @@ function debounce(fn, delay) {
 const log = debounce(() => console.log("Debounced!"), 1000);
 log(); log();
 
+
+// Promises Example
+const myPromise = new Promise((resolve) => {
+  setTimeout(() => resolve("Done!"), 1000);
+});
+myPromise.then(msg => console.log(msg));
+
