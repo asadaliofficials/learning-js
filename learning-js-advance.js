@@ -560,3 +560,12 @@ const nums = [1, 2, 3];
 const doubled = nums.map(n => n * 2);
 console.log(doubled);
 
+
+// Map vs WeakMap
+let map = new Map();
+map.set("a", 1);
+console.log(map.get("a"));
+let wm = new WeakMap();
+let obj = {};
+wm.set(obj, "value");
+
