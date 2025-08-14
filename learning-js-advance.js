@@ -596,3 +596,9 @@ const nums = [1, 2, 3];
 const doubled = nums.map(n => n * 2);
 console.log(doubled);
 
+
+// Fetch API Example
+fetch("https://jsonplaceholder.typicode.com/posts/1")
+  .then(res => res.json())
+  .then(data => console.log(data));
+
