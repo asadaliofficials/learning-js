@@ -602,3 +602,14 @@ fetch("https://jsonplaceholder.typicode.com/posts/1")
   .then(res => res.json())
   .then(data => console.log(data));
 
+
+// Class Example
+class Animal {
+  constructor(name) { this.name = name; }
+  speak() { console.log(this.name + " makes a noise."); }
+}
+class Dog extends Animal {
+  speak() { console.log(this.name + " barks."); }
+}
+new Dog("Rex").speak();
+
