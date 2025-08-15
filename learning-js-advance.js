@@ -634,3 +634,12 @@ const arr = [1, 2, 3];
 const arr2 = [...arr, 4, 5];
 console.log(arr2);
 
+
+// Currying Example
+function add(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+console.log(add(5)(3));
+
