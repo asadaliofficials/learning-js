@@ -704,3 +704,12 @@ setTimeout(() => console.log("Timeout"), 0);
 Promise.resolve().then(() => console.log("Promise"));
 console.log("End");
 
+
+// Prototype Example
+function Person(name) { this.name = name; }
+Person.prototype.sayHi = function() {
+  console.log("Hi, I am " + this.name);
+};
+const p = new Person("Ali");
+p.sayHi();
+
