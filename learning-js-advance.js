@@ -287,3 +287,14 @@ do {
   j++;
 } while (j < 3);
 
+
+// Modules Example
+// file: math.js
+export function add(a, b) {
+  return a + b;
+}
+
+// file: index.js
+import { add } from "./math.js";
+console.log(add(2, 3));
+
