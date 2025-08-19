@@ -795,3 +795,12 @@ do {
   j++;
 } while (j < 3);
 
+
+// Currying Example
+function add(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+console.log(add(5)(3));
+
