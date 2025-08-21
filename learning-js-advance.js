@@ -875,3 +875,11 @@ let ws = new WeakSet();
 let obj = {};
 ws.add(obj);
 
+
+// Modules Example
+// math.js
+export function add(a, b) { return a + b; }
+// index.js
+import { add } from "./math.js";
+console.log(add(2, 3));
+
