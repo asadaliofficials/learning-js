@@ -337,3 +337,16 @@ function add(a) {
 }
 console.log(add(5)(3));
 
+
+// Debounce Function
+function debounce(fn, delay) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), delay);
+  };
+}
+const log = debounce(() => console.log("Debounced!"), 1000);
+log();
+log();
+
