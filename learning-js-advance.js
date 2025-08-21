@@ -861,3 +861,9 @@ const person = { name: "Ali", age: 25 };
 const { name, age } = person;
 console.log(name, age);
 
+
+// Destructuring Example
+const person = { name: "Ali", age: 25 };
+const { name, age } = person;
+console.log(name, age);
+
