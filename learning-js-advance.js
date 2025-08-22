@@ -910,3 +910,9 @@ do {
   j++;
 } while (j < 3);
 
+
+// Optional Chaining Example
+const user = { profile: { email: "test@gmail.com" } };
+console.log(user?.profile?.email);
+console.log(user?.account?.password);
+
