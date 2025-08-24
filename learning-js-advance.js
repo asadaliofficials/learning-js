@@ -990,3 +990,9 @@ setTimeout(() => console.log("Timeout"), 0);
 Promise.resolve().then(() => console.log("Promise"));
 console.log("End");
 
+
+// Optional Chaining Example
+const user = { profile: { email: "test@gmail.com" } };
+console.log(user?.profile?.email);
+console.log(user?.account?.password);
+
