@@ -1014,3 +1014,9 @@ function debounce(fn, delay) {
 const log = debounce(() => console.log("Debounced!"), 1000);
 log(); log();
 
+
+// Nullish Coalescing Example
+let a = null;
+let b = a ?? "default";
+console.log(b);
+
