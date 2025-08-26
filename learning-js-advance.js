@@ -1020,3 +1020,9 @@ let a = null;
 let b = a ?? "default";
 console.log(b);
 
+
+// Destructuring Example
+const person = { name: "Ali", age: 25 };
+const { name, age } = person;
+console.log(name, age);
+
