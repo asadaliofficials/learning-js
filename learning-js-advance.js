@@ -389,3 +389,12 @@ setTimeout(() => console.log("Timeout"), 0);
 Promise.resolve().then(() => console.log("Promise"));
 console.log("End");
 
+
+// Currying Example
+function add(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+console.log(add(5)(3));
+
