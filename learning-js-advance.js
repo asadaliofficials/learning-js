@@ -1063,3 +1063,11 @@ async function getPost() {
 }
 getPost();
 
+
+// Set vs WeakSet
+let set = new Set([1,2,3]);
+console.log(set.has(2));
+let ws = new WeakSet();
+let obj = {};
+ws.add(obj);
+
