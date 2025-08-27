@@ -1041,3 +1041,9 @@ const nums = [1, 2, 3, 4];
 const sum = nums.reduce((acc, n) => acc + n, 0);
 console.log(sum);
 
+
+// Nullish Coalescing Example
+let a = null;
+let b = a ?? "default";
+console.log(b);
+
