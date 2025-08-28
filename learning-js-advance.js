@@ -1105,3 +1105,11 @@ class Dog extends Animal {
 }
 new Dog("Rex").speak();
 
+
+// Modules Example
+// math.js
+export function add(a, b) { return a + b; }
+// index.js
+import { add } from "./math.js";
+console.log(add(2, 3));
+
