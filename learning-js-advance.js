@@ -1119,3 +1119,9 @@ const user = { profile: { email: "test@gmail.com" } };
 console.log(user?.profile?.email);
 console.log(user?.account?.password);
 
+
+// Nullish Coalescing Example
+let a = null;
+let b = a ?? "default";
+console.log(b);
+
