@@ -426,3 +426,17 @@ async function getPost() {
 }
 getPost();
 
+
+// While loop vs Do While loop
+let i = 0;
+while (i < 3) {
+  console.log("While:", i);
+  i++;
+}
+
+let j = 0;
+do {
+  console.log("Do While:", j);
+  j++;
+} while (j < 3);
+
