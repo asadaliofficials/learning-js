@@ -1202,3 +1202,12 @@ const arr = [1, 2, 3];
 const arr2 = [...arr, 4, 5];
 console.log(arr2);
 
+
+// Prototype Example
+function Person(name) { this.name = name; }
+Person.prototype.sayHi = function() {
+  console.log("Hi, I am " + this.name);
+};
+const p = new Person("Ali");
+p.sayHi();
+
