@@ -446,3 +446,10 @@ fetch("https://jsonplaceholder.typicode.com/posts/1")
   .then(res => res.json())
   .then(data => console.log(data));
 
+
+// Promises Example
+const myPromise = new Promise((resolve) => {
+  setTimeout(() => resolve("Done!"), 1000);
+});
+myPromise.then(msg => console.log(msg));
+
