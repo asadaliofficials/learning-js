@@ -1244,3 +1244,12 @@ const nums = [1, 2, 3];
 const doubled = nums.map(n => n * 2);
 console.log(doubled);
 
+
+// Currying Example
+function add(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+console.log(add(5)(3));
+
