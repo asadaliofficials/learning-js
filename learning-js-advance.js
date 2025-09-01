@@ -1217,3 +1217,12 @@ const nums = [1, 2, 3, 4];
 const sum = nums.reduce((acc, n) => acc + n, 0);
 console.log(sum);
 
+
+// Async Await Example
+async function getPost() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+  const data = await res.json();
+  console.log(data);
+}
+getPost();
+
