@@ -1232,3 +1232,9 @@ const nums = [1, 2, 3, 4];
 const sum = nums.reduce((acc, n) => acc + n, 0);
 console.log(sum);
 
+
+// Fetch API Example
+fetch("https://jsonplaceholder.typicode.com/posts/1")
+  .then(res => res.json())
+  .then(data => console.log(data));
+
