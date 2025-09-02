@@ -1280,3 +1280,9 @@ let a = null;
 let b = a ?? "default";
 console.log(b);
 
+
+// Optional Chaining Example
+const user = { profile: { email: "test@gmail.com" } };
+console.log(user?.profile?.email);
+console.log(user?.account?.password);
+
