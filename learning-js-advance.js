@@ -1286,3 +1286,9 @@ const user = { profile: { email: "test@gmail.com" } };
 console.log(user?.profile?.email);
 console.log(user?.account?.password);
 
+
+// Array Map Example
+const nums = [1, 2, 3];
+const doubled = nums.map(n => n * 2);
+console.log(doubled);
+
