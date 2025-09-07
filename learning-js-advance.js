@@ -1375,3 +1375,11 @@ function debounce(fn, delay) {
 const log = debounce(() => console.log("Debounced!"), 1000);
 log(); log();
 
+
+// Modules Example
+// math.js
+export function add(a, b) { return a + b; }
+// index.js
+import { add } from "./math.js";
+console.log(add(2, 3));
+
