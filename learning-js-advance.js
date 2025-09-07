@@ -1383,3 +1383,15 @@ export function add(a, b) { return a + b; }
 import { add } from "./math.js";
 console.log(add(2, 3));
 
+
+// Closures Example
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    return count;
+  };
+}
+const counter = outer();
+console.log(counter());
+
