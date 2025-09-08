@@ -1403,3 +1403,12 @@ export function add(a, b) { return a + b; }
 import { add } from "./math.js";
 console.log(add(2, 3));
 
+
+// Prototype Example
+function Person(name) { this.name = name; }
+Person.prototype.sayHi = function() {
+  console.log("Hi, I am " + this.name);
+};
+const p = new Person("Ali");
+p.sayHi();
+
