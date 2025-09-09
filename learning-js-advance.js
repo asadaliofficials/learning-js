@@ -1418,3 +1418,12 @@ const person = { name: "Ali", age: 25 };
 const { name, age } = person;
 console.log(name, age);
 
+
+// Currying Example
+function add(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+console.log(add(5)(3));
+
