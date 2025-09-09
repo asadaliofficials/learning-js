@@ -1412,3 +1412,9 @@ Person.prototype.sayHi = function() {
 const p = new Person("Ali");
 p.sayHi();
 
+
+// Destructuring Example
+const person = { name: "Ali", age: 25 };
+const { name, age } = person;
+console.log(name, age);
+
