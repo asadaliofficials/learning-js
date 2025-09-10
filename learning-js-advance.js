@@ -1445,3 +1445,16 @@ const arr = [1, 2, 3];
 const arr2 = [...arr, 4, 5];
 console.log(arr2);
 
+
+// While loop vs Do While loop
+let i = 0;
+while (i < 3) {
+  console.log("While:", i);
+  i++;
+}
+let j = 0;
+do {
+  console.log("Do While:", j);
+  j++;
+} while (j < 3);
+
