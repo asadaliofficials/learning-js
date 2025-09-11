@@ -1515,3 +1515,12 @@ async function getPost() {
 }
 getPost();
 
+
+// Map vs WeakMap
+let map = new Map();
+map.set("a", 1);
+console.log(map.get("a"));
+let wm = new WeakMap();
+let obj = {};
+wm.set(obj, "value");
+
