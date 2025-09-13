@@ -563,3 +563,14 @@ const myPromise = new Promise((resolve) => {
 });
 myPromise.then(msg => console.log(msg));
 
+
+// Modules Example
+// file: math.js
+export function add(a, b) {
+  return a + b;
+}
+
+// file: index.js
+import { add } from "./math.js";
+console.log(add(2, 3));
+
