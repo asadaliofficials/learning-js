@@ -1553,3 +1553,12 @@ function add(a) {
 }
 console.log(add(5)(3));
 
+
+// Currying Example
+function add(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+console.log(add(5)(3));
+
