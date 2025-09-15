@@ -1589,3 +1589,9 @@ function outer() {
 const counter = outer();
 console.log(counter());
 
+
+// Optional Chaining Example
+const user = { profile: { email: "test@gmail.com" } };
+console.log(user?.profile?.email);
+console.log(user?.account?.password);
+
