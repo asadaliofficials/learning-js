@@ -1630,3 +1630,12 @@ const myPromise = new Promise((resolve) => {
 });
 myPromise.then(msg => console.log(msg));
 
+
+// Prototype Example
+function Person(name) { this.name = name; }
+Person.prototype.sayHi = function() {
+  console.log("Hi, I am " + this.name);
+};
+const p = new Person("Ali");
+p.sayHi();
+
