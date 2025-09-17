@@ -1639,3 +1639,10 @@ Person.prototype.sayHi = function() {
 const p = new Person("Ali");
 p.sayHi();
 
+
+// Promises Example
+const myPromise = new Promise((resolve) => {
+  setTimeout(() => resolve("Done!"), 1000);
+});
+myPromise.then(msg => console.log(msg));
+
