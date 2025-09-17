@@ -1673,3 +1673,18 @@ async function getPost() {
 }
 getPost();
 
+
+// Throttle Function
+function throttle(fn, limit) {
+  let inThrottle;
+  return (...args) => {
+    if (!inThrottle) {
+      fn(...args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+}
+const log = throttle(() => console.log("Throttled!"), 1000);
+log(); log();
+
