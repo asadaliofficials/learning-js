@@ -1658,3 +1658,9 @@ function debounce(fn, delay) {
 const log = debounce(() => console.log("Debounced!"), 1000);
 log(); log();
 
+
+// Optional Chaining Example
+const user = { profile: { email: "test@gmail.com" } };
+console.log(user?.profile?.email);
+console.log(user?.account?.password);
+
