@@ -1688,3 +1688,12 @@ function throttle(fn, limit) {
 const log = throttle(() => console.log("Throttled!"), 1000);
 log(); log();
 
+
+// Prototype Example
+function Person(name) { this.name = name; }
+Person.prototype.sayHi = function() {
+  console.log("Hi, I am " + this.name);
+};
+const p = new Person("Ali");
+p.sayHi();
+
