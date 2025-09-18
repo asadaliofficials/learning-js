@@ -1715,3 +1715,16 @@ const nums = [1, 2, 3];
 const doubled = nums.map(n => n * 2);
 console.log(doubled);
 
+
+// While loop vs Do While loop
+let i = 0;
+while (i < 3) {
+  console.log("While:", i);
+  i++;
+}
+let j = 0;
+do {
+  console.log("Do While:", j);
+  j++;
+} while (j < 3);
+
