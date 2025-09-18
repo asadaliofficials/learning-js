@@ -1709,3 +1709,9 @@ const arr = [1, 2, 3];
 const arr2 = [...arr, 4, 5];
 console.log(arr2);
 
+
+// Array Map Example
+const nums = [1, 2, 3];
+const doubled = nums.map(n => n * 2);
+console.log(doubled);
+
