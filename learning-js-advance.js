@@ -1697,3 +1697,9 @@ Person.prototype.sayHi = function() {
 const p = new Person("Ali");
 p.sayHi();
 
+
+// Array Map Example
+const nums = [1, 2, 3];
+const doubled = nums.map(n => n * 2);
+console.log(doubled);
+
