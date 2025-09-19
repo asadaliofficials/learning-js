@@ -616,3 +616,16 @@ fetch("https://jsonplaceholder.typicode.com/posts/1")
   .then(res => res.json())
   .then(data => console.log(data));
 
+
+// Closures Example
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    return count;
+  };
+}
+const counter = outer();
+console.log(counter());
+console.log(counter());
+
