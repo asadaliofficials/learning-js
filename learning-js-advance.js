@@ -1819,3 +1819,14 @@ setTimeout(() => console.log("Timeout"), 0);
 Promise.resolve().then(() => console.log("Promise"));
 console.log("End");
 
+
+// Class Example
+class Animal {
+  constructor(name) { this.name = name; }
+  speak() { console.log(this.name + " makes a noise."); }
+}
+class Dog extends Animal {
+  speak() { console.log(this.name + " barks."); }
+}
+new Dog("Rex").speak();
+
