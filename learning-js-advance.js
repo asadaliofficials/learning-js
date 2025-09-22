@@ -1903,3 +1903,9 @@ const user = { profile: { email: "test@gmail.com" } };
 console.log(user?.profile?.email);
 console.log(user?.account?.password);
 
+
+// Spread Operator Example
+const arr = [1, 2, 3];
+const arr2 = [...arr, 4, 5];
+console.log(arr2);
+
