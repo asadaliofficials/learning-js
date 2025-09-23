@@ -1946,3 +1946,9 @@ let wm = new WeakMap();
 let obj = {};
 wm.set(obj, "value");
 
+
+// Optional Chaining Example
+const user = { profile: { email: "test@gmail.com" } };
+console.log(user?.profile?.email);
+console.log(user?.account?.password);
+
