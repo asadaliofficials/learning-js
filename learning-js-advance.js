@@ -1921,3 +1921,10 @@ const arr = [1, 2, 3];
 const arr2 = [...arr, 4, 5];
 console.log(arr2);
 
+
+// Event Loop Example
+console.log("Start");
+setTimeout(() => console.log("Timeout"), 0);
+Promise.resolve().then(() => console.log("Promise"));
+console.log("End");
+
