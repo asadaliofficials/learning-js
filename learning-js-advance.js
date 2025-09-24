@@ -1975,3 +1975,9 @@ const nums = [1, 2, 3, 4];
 const sum = nums.reduce((acc, n) => acc + n, 0);
 console.log(sum);
 
+
+// Optional Chaining Example
+const user = { profile: { email: "test@gmail.com" } };
+console.log(user?.profile?.email);
+console.log(user?.account?.password);
+
