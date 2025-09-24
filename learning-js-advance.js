@@ -1952,3 +1952,14 @@ const user = { profile: { email: "test@gmail.com" } };
 console.log(user?.profile?.email);
 console.log(user?.account?.password);
 
+
+// Class Example
+class Animal {
+  constructor(name) { this.name = name; }
+  speak() { console.log(this.name + " makes a noise."); }
+}
+class Dog extends Animal {
+  speak() { console.log(this.name + " barks."); }
+}
+new Dog("Rex").speak();
+
