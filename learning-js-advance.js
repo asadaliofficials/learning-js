@@ -1987,3 +1987,12 @@ const person = { name: "Ali", age: 25 };
 const { name, age } = person;
 console.log(name, age);
 
+
+// Async Await Example
+async function getPost() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+  const data = await res.json();
+  console.log(data);
+}
+getPost();
+
